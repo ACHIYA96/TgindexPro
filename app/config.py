@@ -28,14 +28,14 @@ try:
 
     index_settings = {
       "index_all": False,
-      "index_private":True,
+      "index_private":False,
       "index_group": True,
       "index_channel": True,
       "exclude_chats": [],
       "include_chats": [int(os.environ["INDEXING_CHAT"])],#my index chat
       "otg": {
           "enable": True,
-          "include_private": True,
+          "include_private": False,
           "include_group": True,
           "include_channel": True
       }
